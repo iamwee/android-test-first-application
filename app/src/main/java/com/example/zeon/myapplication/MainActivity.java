@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initInstances() {
         tvHello = (TextView) findViewById(R.id.tv_hello);
-        tvHello.setText("Test Sharing Projoct on Github");
+        tvHello.setText("Test Sharing Project on Github");
     }
 }
