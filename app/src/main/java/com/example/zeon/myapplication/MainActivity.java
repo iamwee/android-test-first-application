@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         int i = 0;
+        int j = 1;
+        for(i = 0; i <= j; i++){
+            j = 3;
+        }
     }
 
     private void initInstances() {
