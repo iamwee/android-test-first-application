@@ -2,9 +2,12 @@ package com.example.zeon.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    TextView tvHello;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initInstances() {
-
+        tvHello = (TextView) findViewById(R.id.tv_hello);
+        tvHello.setText("Test Sharing Projoct on Github");
     }
 }
