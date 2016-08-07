@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
                 .midname("D")
                 .lastname("Luffy")
                 .age(21)
-                .address("Monkey-d-luffy@hotmail.com")
+                .address("12345 Bangkok")
+                .email("Monkey-d-luffy@hotmail.com")
                 .phone("0812345678")
                 .build();
 
