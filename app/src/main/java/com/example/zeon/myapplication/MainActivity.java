@@ -1,9 +1,10 @@
 package com.example.zeon.myapplication;
 
-import android.support.v4.view.GravityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.zeon.myapplication.obj.Person;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,13 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         Person person = new Person.Builder()
-                .firstName("Hello")
-                .lastName("World")
-                .address("12345 Bangkok")
-                .eMail("examples@hotmail.com")
-                .numberPhone("0812345678")
-                .age(1)
+                .firstname("Monkey")
+                .midname("D")
+                .lastname("Luffy")
+                .age(21)
+                .address("Monkey-d-luffy@hotmail.com")
+                .phone("0812345678")
                 .build();
+
+        Person person1 = new Person.Builder().create();
     }
 
     private void initInstances() {
