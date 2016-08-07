@@ -1,5 +1,6 @@
 package com.example.zeon.myapplication;
 
+import android.support.v4.view.GravityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -18,11 +19,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        int i = 0;
-        int j = 1;
-        for(i = 0; i <= j; i++){
-            j = 3;
-        }
+        Person person = new Person.Builder()
+                .firstName("Hello")
+                .lastName("World")
+                .address("12345 Bangkok")
+                .eMail("examples@hotmail.com")
+                .numberPhone("0812345678")
+                .age(1)
+                .build();
     }
 
     private void initInstances() {
